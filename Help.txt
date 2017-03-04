@@ -1,4 +1,4 @@
-1. git ssh-keygen -t rsa -b 4096 -C "r.saadati85@gmail.com"
+1. git ssh-keygen -t rsa -b 4096 -C "your-email@example.com"
 2. eval "$(ssh-agent -s)"
 3. ssh-add ~/.ssh/id_rsa
 4. For Windows: clip < ~/.ssh/id_rsa.pub
