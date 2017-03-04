@@ -1,0 +1,14 @@
+1. git ssh-keygen -t rsa -b 4096 -C "r.saadati85@gmail.com"
+2. eval "$(ssh-agent -s)"
+3. ssh-add ~/.ssh/id_rsa
+4. For Windows: clip < ~/.ssh/id_rsa.pub
+   For OS X: cat id_rsa.pub | pbcopy
+   For Linux: cat id_rsa.pub | xclip
+   (or just simply copy the content of the file id_rsa.pub)
+5. Go to your GitHub Account -> New SSH Key -> Paste from the clipboard -> Save
+6. git push origin master (only for the first time)
+7. git push
+
+Hint: SSH Key name is not needed. Just hit enter.
+Hint: Using a password is not needed but recommented.
+Hint: If you get an error after the first push command, just try: git push --set-upstream origin master
